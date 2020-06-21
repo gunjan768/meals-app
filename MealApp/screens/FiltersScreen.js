@@ -38,7 +38,7 @@ const FiltersScreen = props =>
 	// useDispatch() provides the dispatch() function.
 	const dispatch = useDispatch();
 
-	// Here we have used useCallback() so that we don't get struck in infinite loop. It will work in the similiar manner as useEfect do.
+	// Here we have used useCallback() so that we don't get strucked in an infinite loop. It will work in the similiar manner as useEfect do.
 	// It also takes a dependencies as a second argument same as useEffect. saveFilters() function will executes after : 1st it has to
 	// be called as it is a user defined function , 2nd it will check the dependencies as it is wrapped by useCallback().
 	const saveFilters = useCallback(() => 
